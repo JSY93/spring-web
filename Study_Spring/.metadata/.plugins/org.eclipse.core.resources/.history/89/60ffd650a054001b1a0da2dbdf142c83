@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="/WEB-INF/views/include/header.jsp"/>
+
+<div id='content'>
+<h3>[ ${vo.name} ] 고객정보</h3>
+<table class='w-pct40'>
+<tr><th class='w-px120'>성별</th>
+	<td>${vo.gender}</td>
+</tr>
+
+</table>
+
+</div>
+
+<jsp:include page="/WEB-INF/views/include/footer.jsp"/>
+</body>
+</html>

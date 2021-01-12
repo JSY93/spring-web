@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<header style='border-bottom:1px solid #ccc; padding:15px 0;'>
+	<div>
+	<ul>
+		<li>고객관리</li>
+		<li>공지사항</li>
+		<li>방명록</li>
+		<li>공공데이터</li>
+	</ul>
+	</div>
+</header>

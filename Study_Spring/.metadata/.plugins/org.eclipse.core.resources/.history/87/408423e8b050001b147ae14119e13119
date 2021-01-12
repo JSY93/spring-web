@@ -1,0 +1,48 @@
+고객관리
+create table customer(
+id        number constraint customer_id_pk primary key,
+name      varchar2(50) not null,
+gender    varchar2(3) default '남',
+email     varchar2(50),
+phone     varchar2(13)
+);
+
+create sequence seq_customer
+start with 1 increment by 1;
+
+insert into customer(id, name, email, phone)
+values (seq_customer.nextval, '홍길동'
+			, 'hong@naver.com', '010-1234-5678');
+
+customer 테이블의 id 컬럼에 seq_customer의 nextval 가
+자동으로 적용이 되도록 하려면
+trigger 를 만들어 사용하자.
+
+create trigger trg_customer
+	before insert on customer
+	for each row
+begin
+	select seq_notice.nextval into :new.id from dual;
+end;
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

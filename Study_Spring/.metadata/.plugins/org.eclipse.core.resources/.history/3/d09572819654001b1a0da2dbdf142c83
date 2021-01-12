@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="/WEB-INF/views/include/header.jsp"/>
+<div id='content'>
+<h3>신규고객</h3>
+<form>
+<table class='w-pct40'>
+<tr><th class='w-px120'>성명</th>
+	<td><input type='text' name='name' /></td>
+</tr>
+</table>
+
+</form>
+
+
+
+</div>
+<jsp:include page="/WEB-INF/views/include/footer.jsp"/>
+
+</body>
+</html>

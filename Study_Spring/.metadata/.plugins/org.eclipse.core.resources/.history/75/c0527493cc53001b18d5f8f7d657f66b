@@ -1,0 +1,10 @@
+package customer;
+
+import java.util.List;
+
+public interface CustomerService {
+
+	List<CustomerVO> customer_list(); //고객목록조회
+	CustomerVO customer_detail(); //고객상세정보조회
+	void customer_update(CustomerVO vo); //고객정보수정저장
+}

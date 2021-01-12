@@ -1,0 +1,8 @@
+°í°´°ü¸®
+create table customer(
+id        number constraint customer_id_pk primary key,
+name      varchar2(50) not null,
+gender    varchar2(3) default '³²',
+email     varchar2(50),
+phone     varchar2(13)
+);
